@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration form </title>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registrationform software trainnees."/>
+    <meta name="keywords" content="software training software, full stack developer, backend developer">
+  </head>
+ <body>
+    <form action="submit-form.php" method="post">
+        <label for="email*">Name:</label>
+        <input type="email" id="email" name="email" placeholder="abelgoitom5@gmail.com" required><br>
+        <label for="male">male:</label>
+        <input type="radio" id="male" name="male"><br>
+        <label for="female">female:</label>
+        <input type="radio" id="female" name="female"><br>
+        <label for="phone">phone:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"><br>
+        <label for="message">message:</label>
+        <textarea name="message" id="message" pattern ="selam"></textarea><br>
+        <button type="submit" id="submit" name="submit"></button>
+    </form>
+ </body>
+</html>
