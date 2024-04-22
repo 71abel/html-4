@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Exam</title>
+</head>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            background-color: #e5e5e5;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .header{
+            grid-column: 1/5;
+            grid-row: 1/2;
+            background-color: #3d5a9c;
+            color: white;
+            
+        }
+        .nav{
+            display: inline-block;
+            grid-column: 2/4;
+            grid-row: 1/2;
+            margin: 10px;
+            padding: 10px;
+            background-color: #3d5a9c;
+            color: white;
+            text-align: center;
+            gap: 15px;
+            
+        }
+        .nav ul li{
+            display: inline-block;
+            color: white;
+            gap: 15px;
+         
+             
+        }
+        .sidebar{
+   
+            grid-column: 1/2;
+            grid-row: 2/4;
+            margin: 10p;
+            padding: 10px;
+            background-color: #ccd0d6;
+            text-align: center;
+        
+        }
+    
+        .main-content{
+            grid-column: 2/4;
+            grid-row: 2/4;
+            margin: 10p;
+            padding: 10px;
+            background-color: white
+        }
+        .content1{
+            grid-column: 4/5;
+            grid-row: 2/4;
+            margin: 10p;
+            padding: 10px;
+            background-color: #ccd0d6;
+            gap: 10px;
+            
+        }
+        .content1 form{
+            margin: 10px;
+            padding: 10px;
+            background-color: #ccd0d6;
+            border: 10px solid transparent;
+            
+        }
+       
+        footer{
+            grid-column: 1/5;
+            grid-row: 4/4;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+<body>
+    <main class="wrapper">
+
+        <section class="header">
+         
+            <h1><image src="bb.jpg"width="80px"></image>Bee Resturant</h1>
+        </section>
+        <section class="nav">
+            <nav>
+                <ul type="none">
+                    <li><button href="#">Home</button></li>
+                    <li><button href="#">who we are </button></li>
+                    <li><button href="#">Menu</button></li>
+
+                </ul>
+            </nav>
+        </section>
+        <section class="sidebar">
+            <h1><button>Desserts</buttons></h1>
+
+            <h2><button>more info</button></h2>
+        </section>
+        <section class="main-content">
+            <p>Tucked away in the heart Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Ipsa recusandae dolorem,
+                 aut iure laborum impedit 
+                iste adipisci ducimus repellat eaque nihil 
+                vero minus ullam cumque expedita 
+                culpa ratione accusantium a. </p>
+                <p>Ipsa recusandae dolorem, aut 
+                    iure laborum impedit 
+                    iste adipisci ducimus repellat eaque nihil 
+                    vero minus ullam cumque expedita 
+                    culpa ratione accusantium a. </p>
+        </section>
+        <section class="content1">
+            <form action="submit" method="post">
+                <label for="name"><button>username*</button></label><br>
+                <input type="email" id="email" name="name" required><br>
+                <label for="password"><button>password*</button></label><br>
+                <input type="text"id="name" name="password"><br>
+                <button>log in</button>
+               
+            </form>
+            </section>
+            <footer>&copy;all rights reserved</footer>
+         
+        </section>
+    </main>
+
+  
+</body>
+</html>
